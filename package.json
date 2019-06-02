@@ -1,5 +1,5 @@
 {
-  "name": "abedurftig",
+  "name": "abedurftig.github.io",
   "private": true,
   "description": "Personal website",
   "version": "0.1.0",
@@ -38,9 +38,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abedurftig/abedurftig"
-  },
-  "bugs": {
-    "url": "https://github.com/abedurftig/abedurftig/issues"
+    "url": "https://github.com/abedurftig/abedurftig.github.io"
   }
 }
