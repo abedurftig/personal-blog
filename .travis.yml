@@ -9,7 +9,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: public
-  repo: abedurftig.github.io
+  repo: abedurftig/abedurftig.git
   target_branch: master
   keep-history: true
   on:
