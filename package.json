@@ -21,9 +21,6 @@
   "devDependencies": {
     "prettier": "^1.17.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -31,7 +28,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"no test specified\" && exit 0",
+    "test": "echo \"no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
