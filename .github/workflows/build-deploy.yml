@@ -29,12 +29,11 @@ jobs:
       - run: yarn test
       - run: yarn generate
       - run: rm ./dist/README.md
-      - run: yarn run gh-pages -d dist -b master --repo https://github.com/abedurftig/abedurftig.github.io
 
-      # - name: Deploy static side
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     external_repository: abedurftig/abedurftig.github.io
-      #     publish_branch: master
-      #     publish_dir: ./dist
+      - name: Deploy static side
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.Deploy_Token }}
+          FOLDER: dist
+          REPOSITORY_NAME: abedurftig/abedurftig.github.io
+          BRANCH: master
