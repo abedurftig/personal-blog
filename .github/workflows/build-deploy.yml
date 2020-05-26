@@ -33,7 +33,7 @@ jobs:
       - name: Deploy static side
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.Deploy_Token }}
+          ACCESS_TOKEN: ${{ secrets.API_TOKEN }}
           FOLDER: dist
           REPOSITORY_NAME: abedurftig/abedurftig.github.io
           BRANCH: master
