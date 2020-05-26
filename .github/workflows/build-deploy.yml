@@ -31,6 +31,7 @@ jobs:
       - run: yarn test
       - run: yarn generate
       - run: rm ./dist/README.md
+      - run: cp ./404.* ./dist/
 
       - name: Deploy static side
         uses: JamesIves/github-pages-deploy-action@releases/v3
