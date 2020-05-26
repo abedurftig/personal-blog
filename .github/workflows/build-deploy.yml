@@ -39,4 +39,5 @@ jobs:
           FOLDER: dist
           REPOSITORY_NAME: abedurftig/abedurftig.github.io
           BRANCH: master
-          COMMIT_MESSAGE: Automatic Deployment - Ref. ${{ github.ref }}
+          COMMIT_MESSAGE: Automatic Deployment - Ref. ${{ github.sha }}
+          CLEAN: true
