@@ -23,22 +23,25 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [{ src: '~/assets/css/main.scss', lang: 'scss' }],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/date-filter.js' }],
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
+    // https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module'
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxt/content'],
+  content: {
+    // Options
+  },
   /*
    ** Build configuration
    */
@@ -46,6 +49,13 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false
+        }
+      }
+    }
   }
 }

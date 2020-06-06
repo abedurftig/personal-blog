@@ -1,9 +1,27 @@
 <template>
   <div>
+    <div class="tabs is-centered">
+      <ul>
+        <li :class="{ 'is-active': linkIsActive('/') }">
+          <NuxtLink to="/">Blog</NuxtLink>
+        </li>
+        <li :class="{ 'is-active': linkIsActive('/about') }">
+          <NuxtLink to="/about" class="nav-block">About</NuxtLink>
+        </li>
+      </ul>
+    </div>
     <nuxt />
   </div>
 </template>
-
+<script>
+export default {
+  methods: {
+    linkIsActive(path) {
+      return this.$route.path === path
+    }
+  }
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
