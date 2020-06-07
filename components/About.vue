@@ -19,6 +19,20 @@
       <div class="content">
         <p>This is me.</p>
       </div>
+      <footer class="card-footer">
+        <a href="https://github.com/abedurftig" class="card-footer-item">
+          GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/arnebeduerftig"
+          class="card-footer-item"
+        >
+          LinkedIn
+        </a>
+        <a href="https://dev.to/abedurftig" class="card-footer-item">
+          DEV
+        </a>
+      </footer>
     </div>
   </div>
 </template>
@@ -27,3 +41,11 @@ export default {
   name: 'About'
 }
 </script>
+<style lang="scss" scoped>
+.card-footer {
+  border-top: 0px;
+}
+.card-footer-item:not(:last-child) {
+  border-right: 0px;
+}
+</style>
