@@ -14,8 +14,13 @@
         </div>
       </div>
       <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        <br />
+        Tags:
+        <span
+          v-for="tag in post.tags"
+          :key="tag"
+          class="tag is-info is-light"
+          >{{ tag }}</span
+        >
         <br />
         <time>Published on: {{ post.publishedOn | date }}</time>
       </div>

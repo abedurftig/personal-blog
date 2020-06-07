@@ -13,6 +13,16 @@
         </div>
       </div>
       <div class="content">
+        Tags:
+        <span
+          v-for="tag in post.tags"
+          :key="tag"
+          class="tag is-info is-light"
+          >{{ tag }}</span
+        >
+        <br />
+        <time>Published on: {{ post.publishedOn | date }}</time>
+        <hr />
         <nuxt-content :document="post" />
       </div>
       <footer class="card-footer">
@@ -53,5 +63,8 @@ export default {
 }
 .card-footer-item:not(:last-child) {
   border-right: 0px;
+}
+.card .media:not(:last-child) {
+  margin-bottom: 0px;
 }
 </style>
