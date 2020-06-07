@@ -4,7 +4,7 @@
       <div class="media">
         <div class="media-left">
           <figure class="image is-64x64">
-            <img :src="post.img" alt="Placeholder image" />
+            <img class="is-rounded" :src="post.img" alt="Placeholder image" />
           </figure>
         </div>
         <div class="media-content">
