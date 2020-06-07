@@ -17,7 +17,7 @@ export default {
     const post = await $content('articles', params.slug).fetch()
     const [prev, next] = await $content('articles')
       .only(['title', 'path'])
-      .sortBy('createdAt')
+      .sortBy('publishedOn')
       .surround(params.slug)
       .fetch()
     return {

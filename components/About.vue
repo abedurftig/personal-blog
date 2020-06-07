@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="content">
-        <p>This is me.</p>
+        <slot />
       </div>
       <footer class="card-footer">
         <a href="https://github.com/abedurftig" class="card-footer-item">

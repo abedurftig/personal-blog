@@ -2,7 +2,9 @@
   <div class="columns is-mobile is-gapless">
     <div class="column is-hidden-mobile"></div>
     <div class="column">
-      <About />
+      <About>
+        <nuxt-content :document="page" />
+      </About>
     </div>
     <div class="column is-hidden-mobile"></div>
   </div>
@@ -12,6 +14,12 @@ import About from '@/components/About'
 export default {
   components: {
     About
+  },
+  async asyncData({ $content }) {
+    const page = await $content('about/index').fetch()
+    return {
+      page
+    }
   }
 }
 </script>
