@@ -1,3 +1,5 @@
+import readdirp from 'readdirp'
+
 export default {
   mode: 'universal',
   /*
@@ -64,11 +66,22 @@ export default {
     // Options
   },
   generate: {
-    routes: [
-      '/2020-07-01-next-post',
-      '/2020-07-06-third-post',
-      '/2020-06-06-initial-post'
-    ]
+    routes() {
+      return readdirp.promise('./content/articles').then((files) => {
+        const routes = []
+        files.forEach((file) => {
+          routes.push({
+            route: file.path.replace('.md', '')
+          })
+        })
+        return routes
+      })
+    }
+    // routes: [
+    //   '/2020-07-01-next-post',
+    //   '/2020-07-06-third-post',
+    //   '/2020-06-06-initial-post'
+    // ]
   },
   /*
    ** Build configuration
