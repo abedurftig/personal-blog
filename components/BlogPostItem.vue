@@ -17,8 +17,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         <br />
         <br />
-        <time datetime="2016-1-1"
-          >Published on: {{ post.createdAt | date }}</time
+        <time>Published on: {{ post.publishedOn | date }}</time
         >
       </div>
     </div>

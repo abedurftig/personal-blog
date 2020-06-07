@@ -30,7 +30,6 @@ jobs:
       - run: yarn install
       # - run: yarn test
       - run: yarn generate
-      - run: rm ./dist/README.md
       - run: cp ./404.* ./dist/
 
       - name: Deploy static side

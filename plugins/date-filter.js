@@ -3,7 +3,7 @@ import Vue from 'vue'
 
 const DateFilter = function(value) {
   if (value) {
-    return moment(String(value)).format('DD/MM/YYYY HH:mm')
+    return moment(String(value)).format('YYYY-MM-DD')
   }
 }
 
