@@ -16,8 +16,8 @@
         <nuxt-content :document="post" />
       </div>
       <footer class="card-footer">
-        <a v-if="prev" :href="prev.slug" class="card-footer-item">Previous</a>
-        <a v-if="next" :href="next.slug" class="card-footer-item">Next</a>
+        <NuxtLink v-if="prev" :to="prev.slug" class="card-footer-item">Previous</NuxtLink>
+        <NuxtLink v-if="next" :to="next.slug" class="card-footer-item">Next</NuxtLink>
       </footer>
     </div>
   </div>

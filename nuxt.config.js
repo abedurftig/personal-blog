@@ -63,6 +63,13 @@ export default {
   content: {
     // Options
   },
+  generate: {
+    routes: [
+      '/2020-07-01-next-post',
+      '/2020-07-06-third-post',
+      '/2020-06-06-initial-post'
+    ]
+  },
   /*
    ** Build configuration
    */
