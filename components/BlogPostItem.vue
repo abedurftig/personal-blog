@@ -17,8 +17,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         <br />
         <br />
-        <time>Published on: {{ post.publishedOn | date }}</time
-        >
+        <time>Published on: {{ post.publishedOn | date }}</time>
       </div>
     </div>
   </div>
