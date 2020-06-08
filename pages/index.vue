@@ -20,7 +20,7 @@ export default {
   },
   async asyncData({ $content }) {
     const posts = await $content('articles')
-      .sortBy('publishedOn', 'desc')
+      .sortBy('date', 'desc')
       .fetch()
     return {
       posts

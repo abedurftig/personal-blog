@@ -4,7 +4,7 @@
       <div class="media">
         <div class="media-left">
           <figure class="image is-128x128">
-            <img class="is-rounded" :src="post.img" alt="Placeholder image" />
+            <img class="is-rounded" :src="post.cover_image" alt="Placeholder image" />
           </figure>
         </div>
         <div class="media-content">
@@ -21,7 +21,7 @@
           >{{ tag }}</span
         >
         <br />
-        <time>Published on: {{ post.publishedOn | date }}</time>
+        <time>Published on: {{ post.date | date }}</time>
         <hr />
         <nuxt-content :document="post" />
       </div>
