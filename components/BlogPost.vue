@@ -4,11 +4,7 @@
       <div class="media">
         <div class="media-left">
           <figure class="image is-128x128">
-            <img
-              class="is-rounded"
-              :src="post.cover_image"
-              alt="Placeholder image"
-            />
+            <img class="is-rounded" :src="imageLink" alt="Placeholder image" />
           </figure>
         </div>
         <div class="media-content">
@@ -58,6 +54,11 @@ export default {
       type: Object,
       required: false,
       default: null
+    }
+  },
+  computed: {
+    imageLink() {
+      return '/' + this.post.cover_image
     }
   }
 }
