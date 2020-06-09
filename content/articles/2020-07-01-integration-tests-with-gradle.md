@@ -3,6 +3,7 @@ title: Integration tests with Gradle
 description: Separate Integration tests from Unit tests to fail fast.
 cover_image: undraw_source_code_xx2e.png
 date: '2020-07-01'
+public: false
 tags:
   - Gradle
   - Testing
