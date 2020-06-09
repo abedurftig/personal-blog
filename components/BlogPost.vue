@@ -24,8 +24,9 @@
           class="tag is-info is-light"
           >{{ tag }}</span
         >
-        <br />
-        <time>Published on: {{ post.date | date }}</time>
+        <div class="published-date">
+          <time>Published on: {{ post.date | date }}</time>
+        </div>
         <hr />
         <nuxt-content :document="post" />
       </div>
@@ -70,5 +71,12 @@ export default {
 }
 .card .media:not(:last-child) {
   margin-bottom: 0px;
+}
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.tag:not(:last-child) {
+  margin-right: 6px;
 }
 </style>

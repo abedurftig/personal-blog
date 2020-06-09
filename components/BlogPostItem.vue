@@ -51,4 +51,7 @@ export default {
 .card {
   margin-bottom: 10px;
 }
+.tag:not(:last-child) {
+  margin-right: 6px;
+}
 </style>
