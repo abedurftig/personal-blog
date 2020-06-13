@@ -25,7 +25,7 @@ export default {
   },
   async asyncData({ $content }) {
     const posts = await $content('articles')
-      .where({ public: true })
+      .where({ published: true })
       .sortBy('date', 'desc')
       .fetch()
     return {

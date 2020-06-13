@@ -3,7 +3,7 @@ title: Why I decided to publish on a blog?
 description: Just if you care.
 cover_image: undraw_launching_125y.png
 date: '2020-06-06'
-public: true
+published: true
 tags:
   - Personal Development
   - Writing
