@@ -63,7 +63,7 @@ export default {
   },
   computed: {
     imageLink() {
-      return '/' + this.post.cover_image
+      return this.post.cover_image
     }
   }
 }
