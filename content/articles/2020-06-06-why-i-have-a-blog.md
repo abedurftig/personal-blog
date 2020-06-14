@@ -1,13 +1,16 @@
 ---
 title: Why I decided to publish on a blog?
 description: Just if you care.
-cover_image: undraw_launching_125y.png
+cover_image: https://raw.githubusercontent.com/abedurftig/personal-blog/master/static/undraw_launching_125y.png
 date: '2020-06-06'
 published: true
+canonical_url: https://abedurftig.github.io/2020-06-06-why-i-have-a-blog
 tags:
-  - Personal Development
   - Writing
-  - Sharing 
+  - Sharing
+  - Growing
+devToId: 355215
+devToUrl: https://dev.to/abedurftig/why-i-decided-to-publish-on-a-blog-1a6d
 ---
 There are already so many blogs out there, most of them have probably more and better content than mine. Yet I have decided to start running my own blog. So why?
 
