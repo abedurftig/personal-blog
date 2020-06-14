@@ -1,6 +1,6 @@
 <template>
   <div class="columns is-mobile is-gapless">
-    <div class="column is-hidden-mobile is-hidden-tablet"></div>
+    <div class="column is-hidden-mobile is-hidden-touch"></div>
     <div class="column">
       <div v-if="posts">
         <div v-for="post in posts" :key="post.title">
@@ -13,7 +13,7 @@
         </div>
       </section>
     </div>
-    <div class="column is-hidden-mobile is-hidden-tablet"></div>
+    <div class="column is-hidden-mobile is-hidden-touch"></div>
   </div>
 </template>
 <script>
