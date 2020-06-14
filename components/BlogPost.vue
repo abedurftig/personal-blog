@@ -25,6 +25,11 @@
         </div>
         <hr />
         <nuxt-content :document="post" />
+        <hr />
+        <div v-if="post.devToUrl">
+          This post has also been published at <b>DEV</b>. Head over there to
+          <a :href="post.devToUrl">join the discussion</a>.
+        </div>
       </div>
       <footer class="card-footer">
         <NuxtLink v-if="prev" :to="prev.slug" class="card-footer-item"
