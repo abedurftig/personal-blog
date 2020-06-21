@@ -28,7 +28,6 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: yarn install
-      # - run: yarn test
       - run: yarn generate
       - run: cp ./404.* ./dist/
 
@@ -41,3 +40,10 @@ jobs:
           BRANCH: master
           COMMIT_MESSAGE: Automatic Deployment - Ref. ${{ github.sha }}
           CLEAN: true
+
+      - name: Syndicate blog posts
+        run: docker run -v `pwd`:/home/app/project \
+             -e BPP_ARTICLES_DIR=/content/articles \
+             -e BPP_DEV_TOKEN=${{ secrets.DEV_TO }} \
+             -e BPP_GITHUB_TOKEN=${{ secrets.API_TOKEN }} \
+             dasnervtdoch/blog-post-promoter:latest
