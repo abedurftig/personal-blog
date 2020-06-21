@@ -42,8 +42,4 @@ jobs:
           CLEAN: true
 
       - name: Syndicate blog posts
-        run: docker run -v `pwd`:/home/app/project \
-             -e BPP_ARTICLES_DIR=/content/articles \
-             -e BPP_DEV_TOKEN=${{ secrets.DEV_TO }} \
-             -e BPP_GITHUB_TOKEN=${{ secrets.API_TOKEN }} \
-             dasnervtdoch/blog-post-promoter:latest
+        run: docker run -v `pwd`:/home/app/project -e BPP_ARTICLES_DIR=/content/articles -e BPP_DEV_TOKEN=${{ secrets.DEV_TO }} -e BPP_GITHUB_TOKEN=${{ secrets.API_TOKEN }} dasnervtdoch/blog-post-promoter:latest
